@@ -777,7 +777,7 @@ const Feature = ({f, flip}) => (
         <h2>{f.title}</h2>
         <p className="lead">{f.text}</p>
         <div className="solves">
-          <p className="solves-label">Solves <strong>{f.problem}</strong></p>
+          <p className="solves-label"><span className="solves-word">Solves</span> <strong>{f.problem}</strong></p>
           <p className="solves-text">{f.problemText}</p>
         </div>
       </div>
@@ -848,7 +848,6 @@ const MILESTONES = [
             <div><h4>Built for volume and velocity</h4><p>Distinct communities are verified, validated and processed independently, with no graph-wide sync. Each agent’s older transactions can be pruned from hot storage into a cold archive, leaving a signed snapshot behind. You choose how much recent history stays hot, which sharply cuts storage and compute.</p></div>
           </li>
         </ul>
-        <p className="ms-links"><Ext href={LINKS.prototype} strong>Download the private preview prototype</Ext></p>
       </div>
     )},
   {year: '2026', icon: 'patent', title: 'Granted a U.S. patent',
@@ -862,7 +861,6 @@ const MILESTONES = [
     body: (
       <div>
         <p>A platform to view and analyze agent activity. It works like the block explorers built for blockchains, with custom-designed and agentic analysis of the graph added on top.</p>
-        <p className="ms-links"><Ext href={LINKS.demo} strong>Download the private preview demo</Ext></p>
       </div>
     )},
 ];
